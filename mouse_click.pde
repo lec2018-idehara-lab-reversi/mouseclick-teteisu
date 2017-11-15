@@ -96,5 +96,5 @@ void mouseClicked()
   int gy = 1;
 
   ban[gx][gy] = teban;
-  teban = -teban;
+  // update teban to the next color 
 }
