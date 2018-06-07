@@ -92,8 +92,8 @@ void mouseClicked()
   // mouseX, mouseY are in Screen Coordinate (0-640)
   // convert them to Logical Coordinate (1-8)
   println("(" + mouseX + "," + mouseY + ")");
-  int gx = 1;
-  int gy = 1;
+  int gx = ( round(mouseX/80+1));
+  int gy = ( round( mouseY/80+1));
 
   ban[gx][gy] = teban;
   // update teban to the next color 
