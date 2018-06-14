@@ -63,7 +63,7 @@ void showBan(int[][] b)
   {
     for(int x=1; x<=8; x++)
     {
-      switch(b[x][y])
+     switch(b[x][y])
       {
         case SOTO:
           break;
@@ -96,5 +96,10 @@ void mouseClicked()
   int gy = ( round( mouseY/80+1));
 
   ban[gx][gy] = teban;
-  // update teban to the next color 
+   switch (teban) {
+     case KURO:
+          teban = SHIRO;
+     case SHIRO:
+          teban = KURO;
+   }
 }
